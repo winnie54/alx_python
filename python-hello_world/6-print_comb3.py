@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10000, 10000);
-print("the last digit of"(number)'is')
-
+for i in range(0, 10):
+    for j in range(0, 10):
+        if i < j:
+            print("{}{}".format(i, j), end="")
+        if i < 8:
+            print(", ", end="")
+print("\n", end="")
