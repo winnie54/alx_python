@@ -1,3 +1,4 @@
 #!/usr/bin/python
 def reverse_string(string):
-    return (string)
+    reversed_string = string[::-1]
+    return (reversed_string)
