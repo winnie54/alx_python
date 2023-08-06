@@ -13,8 +13,7 @@ class Square:
     def get_size(self):
         return self.__size
     def __init__(self, size):
-        """initialize square
-        self.__size = size  #: size of the square"""
+        #initialize square
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
