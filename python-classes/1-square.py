@@ -4,26 +4,17 @@
 
 class Square:
     """ class Square that defines a square"""
-    def __init__(self, size=0):
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
+    class Square:
+    def __init__(self, size):
         self.__size = size
+
     def get_size(self):
         return self.__size
-    def __init__(self, size):
-        #initialize square
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
+
+    def set_size(self, size):
         self.__size = size
-    
-        def __validate_size(self):
-            #validates a square
-        if not isinstance(self.__size, int):
-            raise TypeError("size must be an integer")
-        
-        if self.__size < 0:
-            raise ValueError("size must be >= 0")
+
+    def area(self):
+        return self.__size * self.__size
+my_square = Square(3)
+print(my_square.area())  # Output: 9
